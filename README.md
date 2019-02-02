@@ -27,4 +27,15 @@ For better results, your initial sound and TextGrid files should have consistent
 
 `cp_formants.praat` creates a folder called `output` that contains the estimated formant tracks. 
 
-When you run the `R` script `cp_BuildTable.R` you'll be prompted to load the list of formant files, then it'll split file names according to the underscores and ask you to provide generic names for the fields delimited by underscores. Say yes to the following 2 dialog boxes, and two new variables will be created in your `R` worskpace : `dataList`(a list object) and `phonData`, a dataframe containing formant values taken at temporal midpoint. 
+When you run the `R` script `cp_BuildTable.R` you'll be prompted to load the list of formant files, then it'll split file names according to the underscores and ask you to provide generic names for the fields delimited by underscores. Say yes to the following 2 dialog boxes, and two new variables will be created in your `R` worskpace : `dataList`(a list object) and `phonData`, a dataframe containing formant values taken at temporal midpoint.
+
+In order to make sure that everything went fine, type: `head(phonData)`
+And you should see the first lines of your dataframe. 
+
+The data in the `dataList` variable can be accessed as follows:
+
+`dataList[[1]]$data$F1Hz`
+contains the F1 values for the 1st vowel in the dataset
+
+`dataList[[1]]$metadata$symbolASCII`
+contains the symbol of the 1st vowel in the dataset
