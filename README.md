@@ -15,5 +15,5 @@ Run `cp_formants.praat` :
 * the annotion is on tier number 1 for this example
 
 <p align="center">
-<img src="https://github.com/emmanuelferragne/CminR-Praatik/blob/master/cpFormants.png" width="290"/>
+<img src="https://github.com/emmanuelferragne/CminR-Praatik/blob/master/cpFormants.png" width="500"/>
 </p>
