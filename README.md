@@ -20,3 +20,9 @@ Run `cp_formants.praat` :
 </p>
 
 If you are a Praat user, the parameters in the GUI are self-explanatory. If the estimated formant tracks in red match the formants on the spectrogram, click Next. Otherwise, you can adjust the estimate by e.g. increasing or decreasing the maximum frequency (you can use the arrow keys on your keyboard to do this). 
+
+## Output and analysis
+
+`cp_formants.praat` creates a folder called `output` that contains the estimated formant tracks. 
+
+The `R`script, `cp_BuildTable.R` expects a list of the files in the `output` folder. When you run  `cp_BuildTable.R` you'll be prompted to load the list of formant files. Then dialog boxes will ask you to ''Name variables''. 
