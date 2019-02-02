@@ -30,7 +30,7 @@ For better results, your initial sound and TextGrid files should have consistent
 When you run the `R` script `cp_BuildTable.R` you'll be prompted to load the list of formant files, then it'll split file names according to the underscores and ask you to provide generic names for the fields delimited by underscores. Say yes to the following 2 dialog boxes, and two new variables will be created in your `R` worskpace : `dataList`(a list object) and `phonData`, a dataframe containing formant values taken at temporal midpoint.
 
 In order to make sure that everything went fine, type: `head(phonData)`
-And you should see the first lines of your dataframe. 
+and you should see the first lines of your dataframe. The R package [phonR](https://github.com/drammock/phonR) is a good option to analyze this dataframe.
 
 The data in the `dataList` variable can be accessed as follows:
 
