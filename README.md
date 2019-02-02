@@ -13,4 +13,7 @@ Run `cp_formants.praat` :
 * when prompted to load a file list, choose `file.txt`
 * when prompted to load the dictionary file, choose `dico.txt`
 * the annotion is on tier number 1 for this example
-[https://github.com/emmanuelferragne/CminR-Praatik/blob/master/cpFormants.png]
+
+<p align="center">
+<img src="https://github.com/emmanuelferragne/CminR-Praatik/blob/master/cpFormants.png" width="290"/>
+</p>
