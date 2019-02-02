@@ -23,6 +23,8 @@ If you are a Praat user, the parameters in the GUI are self-explanatory. If the 
 
 ## Output and analysis
 
+For better results, your initial sound and TextGrid files should have consistent names with fields separated by underscores as in e.g. `EN_spk01_reading.wav`, `FR_spk01_reading.wav`, etc.
+
 `cp_formants.praat` creates a folder called `output` that contains the estimated formant tracks. 
 
-The `R`script, `cp_BuildTable.R` expects a list of the files in the `output` folder. When you run  `cp_BuildTable.R` you'll be prompted to load the list of formant files. Then dialog boxes will ask you to ''Name variables''. 
+When you run the `R` script `cp_BuildTable.R` you'll be prompted to load the list of formant files, then it'll split file names according to the underscores and ask you to provide generic names for the fields delimited by underscores. Say yes to the following 2 dialog boxes, and two new variables will be created in your `R` worskpace : `dataList`(a list object) and `phonData`, a dataframe containing formant values taken at temporal midpoint. 
