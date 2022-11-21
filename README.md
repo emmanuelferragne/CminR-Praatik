@@ -7,7 +7,7 @@ Make sure [Praat](http://www.fon.hum.uva.nl/praat/) is installed on your compute
 
 Download `cp_formants.praat`and the `formantDemo` folder
 
-Edit `file.txt` and adapt the paths to your own directories
+Edit `list.txt` and adapt the paths to your own directories
 
 Run `cp_formants.praat` :
 * when prompted to load a file list, choose `file.txt`
