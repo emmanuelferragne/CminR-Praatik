@@ -4,7 +4,7 @@
 #removed vowels are in file "removeOutliers + current date"
 #if reset is pressed or Praat is closed, the process starts again from scratch
 #currently plays back whole sound file (so original sound files should be short)
-#assumes formant files were obtained with cp_formant
+#assumes formant files were obtained with cp_formants
 
 demoWindowTitle: "cp_plot2DRemoveOutliers v0.01 Ferragne 2024"
 theDate$ = date$()
