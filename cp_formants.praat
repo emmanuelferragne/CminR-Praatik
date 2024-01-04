@@ -1,17 +1,18 @@
-demoWindowTitle: "cp_formants v. 1.02 Ferragne 2017"
+#changes
+#v2.0
+#added .param files to save formant parameters for reproducibility
+
+demoWindowTitle: "cp_formants v.2.0 Ferragne 2024"
 demo Erase all
 
-#initialisation de qq variables
 maxFreq = 5500
 nbFormants = 5
+preEmph = 50
+timeStep = 0.005
 #phonTier : le tier dans lequel on cherche les labels
 phonTier = 1
-#taille de la fenêtre pour l'analyse de formants
-#valeur standard (le pas d'analyse imposé est 0.005 ms)
-#je ne l'ai pas mis en variable, mais il peut être
-#changé directement dans la fonction
 winSize = 0.025
-#forcer l'encodage en UTF-8
+#force UTF-8 encoding
 Text writing preferences: "UTF-8"
 
 demo Select inner viewport: 0, 100, 0, 100
@@ -222,7 +223,13 @@ for stringID from 1 to nbFiles
 						Down to Table: "no", "yes", 6, "yes", 3, "yes", 3, "no"
 						Append column: "symbol"
 						Set string value: 1, "symbol", phonSymb$
-						Save as tab-separated file: directoryOut$ + objName$ + "_" + stringInter$ + "_" + phonSymbInName$ + ".txt"		
+						Save as tab-separated file: directoryOut$ + objName$ + "_" + stringInter$ + "_" + phonSymbInName$ + ".txt"
+						writeFile: directoryOut$ + objName$ + "_" + stringInter$ + "_" + phonSymbInName$ + ".param", 
+						... "Time step (s): ", timeStep, newline$,
+						... "Max. number of formants: ", nbFormants, newline$,
+						... "Formant ceiling (Hz): ", maxFreq, newline$,
+						... "Window length (s): ",winSize, newline$,
+						... "Pre-emphasis from (Hz): ", preEmph 
 						myChoice = 1
 						@saveNewList
 					elsif demoClickedIn(75, 85, 15, 25)
@@ -291,9 +298,3 @@ procedure interruptScreen
 	select all
 	Remove
 endproc
-
-
-			
-			
-		
-		
