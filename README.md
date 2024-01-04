@@ -10,7 +10,7 @@ Download `cp_formants.praat`and the `formantDemo` folder
 Edit `list.txt` and adapt the paths to your own directories
 
 Run `cp_formants.praat` :
-* when prompted to load a file list, choose `file.txt`
+* when prompted to load a file list, choose `list.txt`
 * when prompted to load the dictionary file, choose `dico.txt`
 * the annotion is on tier number 1 for this example
 * you should be able to see a GUI looking like this:
