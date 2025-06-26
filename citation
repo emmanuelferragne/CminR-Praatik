@@ -1,1 +1,16 @@
-CITATION.cff
+abstract: <p>Praat and R scripts for formant analysis</p>
+authors:
+- family-names: Emmanuel Ferragne
+cff-version: 1.2.0
+date-released: '2025-06-26'
+doi: 10.5281/zenodo.15745534
+identifiers:
+- type: swh
+  value: swh:1:dir:14e8bfb0b96166766ef7b28c19a9a3bf794dcd2b;origin=https://doi.org/10.5281/zenodo.15745533;visit=swh:1:snp:c17516c809d701bf9623726efa51ce045cdb5586;anchor=swh:1:rel:a6171ddf508a1bab2b04e0c69ff5e090a55440f2;path=emmanuelferragne-CminR-Praatik-d1d9dc2
+license:
+- cc-by-4.0
+message: If you use this software, please cite it using the metadata from this file.
+repository-code: https://github.com/emmanuelferragne/CminR-Praatik/tree/v2.0
+title: 'emmanuelferragne/CminR-Praatik: CminR-Praatik'
+type: software
+version: v2.0
