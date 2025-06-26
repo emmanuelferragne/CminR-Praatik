@@ -1,5 +1,8 @@
 # CminR-Praatik
 I wrote these Praat and R scripts for a doctoral seminar I teach at Université Paris Cité. My aim was to establish a consistent workflow to manually measure **vowel formants**.
+
+Please don't forget to **cite this repo** if you used the scripts available here. 
+
 ## Getting started
 The easiest way to start with the programs is to use the demo files in the folder `formantDemo` :
 
